@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20DCF99A751F7E3995808178 /* Pods_HooqAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */; };
+		6E16E5671762E7A18CECB73F /* Pods_HooqAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B83A41A02532CC7F834D1B /* Pods_HooqAppTests.framework */; };
+		A8DCEDC30D4629CA54FE1446 /* Pods_HooqApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */; };
 		F12F3EA023632A6400183C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3E9F23632A6400183C46 /* AppDelegate.swift */; };
 		F12F3EA223632A6400183C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3EA123632A6400183C46 /* ViewController.swift */; };
 		F12F3EA523632A6400183C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA323632A6400183C46 /* Main.storyboard */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		025F224E90B0AF5B2798DB25 /* Pods-HooqAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppUITests/Pods-HooqAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B2C03388F249C06E637EF6F /* Pods-HooqApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp.release.xcconfig"; sourceTree = "<group>"; };
+		4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B83A41A02532CC7F834D1B /* Pods_HooqAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		791D4DEF91155B0E513ED91C /* Pods-HooqAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppTests/Pods-HooqAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB82DBE2D700AF92F572CBF7 /* Pods-HooqAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppUITests/Pods-HooqAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1E0F4363E468997CFD2A37 /* Pods-HooqAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppTests/Pods-HooqAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EFC9385F991B085FA83C4FB5 /* Pods-HooqApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F12F3E9C23632A6400183C46 /* HooqApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HooqApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12F3E9F23632A6400183C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12F3EA123632A6400183C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DCEDC30D4629CA54FE1446 /* Pods_HooqApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E16E5671762E7A18CECB73F /* Pods_HooqAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20DCF99A751F7E3995808178 /* Pods_HooqAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		937D66ED59FC0308E11677B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */,
+				46B83A41A02532CC7F834D1B /* Pods_HooqAppTests.framework */,
+				D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98EAEF0D5EEF8BEE1698BE3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9385F991B085FA83C4FB5 /* Pods-HooqApp.debug.xcconfig */,
+				2B2C03388F249C06E637EF6F /* Pods-HooqApp.release.xcconfig */,
+				791D4DEF91155B0E513ED91C /* Pods-HooqAppTests.debug.xcconfig */,
+				DA1E0F4363E468997CFD2A37 /* Pods-HooqAppTests.release.xcconfig */,
+				CB82DBE2D700AF92F572CBF7 /* Pods-HooqAppUITests.debug.xcconfig */,
+				025F224E90B0AF5B2798DB25 /* Pods-HooqAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F12F3E9323632A6400183C46 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				F12F3EB323632A6500183C46 /* HooqAppTests */,
 				F12F3EBE23632A6500183C46 /* HooqAppUITests */,
 				F12F3E9D23632A6400183C46 /* Products */,
+				98EAEF0D5EEF8BEE1698BE3A /* Pods */,
+				937D66ED59FC0308E11677B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F12F3EC423632A6500183C46 /* Build configuration list for PBXNativeTarget "HooqApp" */;
 			buildPhases = (
+				E16CCB5FEDA326C102E9FB60 /* [CP] Check Pods Manifest.lock */,
 				F12F3E9823632A6400183C46 /* Sources */,
 				F12F3E9923632A6400183C46 /* Frameworks */,
 				F12F3E9A23632A6400183C46 /* Resources */,
+				ADDEF5937B05CDCA7B0A85E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F12F3EC723632A6500183C46 /* Build configuration list for PBXNativeTarget "HooqAppTests" */;
 			buildPhases = (
+				6D108EA600311ECC4E729F73 /* [CP] Check Pods Manifest.lock */,
 				F12F3EAC23632A6500183C46 /* Sources */,
 				F12F3EAD23632A6500183C46 /* Frameworks */,
 				F12F3EAE23632A6500183C46 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F12F3ECA23632A6500183C46 /* Build configuration list for PBXNativeTarget "HooqAppUITests" */;
 			buildPhases = (
+				7C8C98A84C5D1521920D6487 /* [CP] Check Pods Manifest.lock */,
 				F12F3EB723632A6500183C46 /* Sources */,
 				F12F3EB823632A6500183C46 /* Frameworks */,
 				F12F3EB923632A6500183C46 /* Resources */,
@@ -250,6 +294,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D108EA600311ECC4E729F73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HooqAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C8C98A84C5D1521920D6487 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HooqAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADDEF5937B05CDCA7B0A85E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E16CCB5FEDA326C102E9FB60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HooqApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F12F3E9823632A6400183C46 /* Sources */ = {
@@ -430,6 +549,7 @@
 		};
 		F12F3EC523632A6500183C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC9385F991B085FA83C4FB5 /* Pods-HooqApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +568,7 @@
 		};
 		F12F3EC623632A6500183C46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2C03388F249C06E637EF6F /* Pods-HooqApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +587,7 @@
 		};
 		F12F3EC823632A6500183C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791D4DEF91155B0E513ED91C /* Pods-HooqAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +609,7 @@
 		};
 		F12F3EC923632A6500183C46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1E0F4363E468997CFD2A37 /* Pods-HooqAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +631,7 @@
 		};
 		F12F3ECB23632A6500183C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB82DBE2D700AF92F572CBF7 /* Pods-HooqAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +652,7 @@
 		};
 		F12F3ECC23632A6500183C46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025F224E90B0AF5B2798DB25 /* Pods-HooqAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
