@@ -9,9 +9,18 @@
 /* Begin PBXBuildFile section */
 		20DCF99A751F7E3995808178 /* Pods_HooqAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */; };
 		6E16E5671762E7A18CECB73F /* Pods_HooqAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B83A41A02532CC7F834D1B /* Pods_HooqAppTests.framework */; };
+		71A91914236333AA00D0651D /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A91913236333AA00D0651D /* MovieListViewController.swift */; };
+		71A919172363341A00D0651D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919162363341A00D0651D /* BaseViewController.swift */; };
+		71A919192363345600D0651D /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919182363345600D0651D /* MovieListPresenter.swift */; };
+		71A9191B2363347000D0651D /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9191A2363347000D0651D /* MovieListRouter.swift */; };
+		71A9191D2363348100D0651D /* MovieListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9191C2363348100D0651D /* MovieListConfigurator.swift */; };
+		71A919202363350200D0651D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9191F2363350200D0651D /* BaseService.swift */; };
+		71A919232363355800D0651D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919222363355800D0651D /* Logger.swift */; };
+		71A91926236336AD00D0651D /* FetchMovieListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A91925236336AD00D0651D /* FetchMovieListUseCase.swift */; };
+		71A9192923633A1C00D0651D /* FetchMovieListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9192823633A1C00D0651D /* FetchMovieListRepository.swift */; };
+		71A9192B23633A3100D0651D /* FetchMovieListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9192A23633A3100D0651D /* FetchMovieListService.swift */; };
 		A8DCEDC30D4629CA54FE1446 /* Pods_HooqApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */; };
 		F12F3EA023632A6400183C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3E9F23632A6400183C46 /* AppDelegate.swift */; };
-		F12F3EA223632A6400183C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3EA123632A6400183C46 /* ViewController.swift */; };
 		F12F3EA523632A6400183C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA323632A6400183C46 /* Main.storyboard */; };
 		F12F3EA723632A6500183C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA623632A6500183C46 /* Assets.xcassets */; };
 		F12F3EAA23632A6500183C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA823632A6500183C46 /* LaunchScreen.storyboard */; };
@@ -41,6 +50,16 @@
 		2B2C03388F249C06E637EF6F /* Pods-HooqApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp.release.xcconfig"; sourceTree = "<group>"; };
 		4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B83A41A02532CC7F834D1B /* Pods_HooqAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A91913236333AA00D0651D /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		71A919162363341A00D0651D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		71A919182363345600D0651D /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		71A9191A2363347000D0651D /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
+		71A9191C2363348100D0651D /* MovieListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListConfigurator.swift; sourceTree = "<group>"; };
+		71A9191F2363350200D0651D /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		71A919222363355800D0651D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		71A91925236336AD00D0651D /* FetchMovieListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieListUseCase.swift; sourceTree = "<group>"; };
+		71A9192823633A1C00D0651D /* FetchMovieListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieListRepository.swift; sourceTree = "<group>"; };
+		71A9192A23633A3100D0651D /* FetchMovieListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieListService.swift; sourceTree = "<group>"; };
 		791D4DEF91155B0E513ED91C /* Pods-HooqAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppTests/Pods-HooqAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB82DBE2D700AF92F572CBF7 /* Pods-HooqAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppUITests/Pods-HooqAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +67,6 @@
 		EFC9385F991B085FA83C4FB5 /* Pods-HooqApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F12F3E9C23632A6400183C46 /* HooqApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HooqApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12F3E9F23632A6400183C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F12F3EA123632A6400183C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F12F3EA423632A6400183C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F12F3EA623632A6500183C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12F3EA923632A6500183C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +107,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71A9190E2363327700D0651D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				71A91915236333F600D0651D /* Common */,
+				71A919122363333B00D0651D /* MovieList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		71A9190F2363328400D0651D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				71A91927236339FE00D0651D /* MovieList */,
+				71A9191E236334BA00D0651D /* Common */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		71A919102363328E00D0651D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				71A91924236335B500D0651D /* MovieList */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		71A919112363329C00D0651D /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				71A919212363354400D0651D /* Utility */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		71A919122363333B00D0651D /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				71A91913236333AA00D0651D /* MovieListViewController.swift */,
+				71A919182363345600D0651D /* MovieListPresenter.swift */,
+				71A9191C2363348100D0651D /* MovieListConfigurator.swift */,
+				71A9191A2363347000D0651D /* MovieListRouter.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		71A91915236333F600D0651D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71A919162363341A00D0651D /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		71A9191E236334BA00D0651D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71A9191F2363350200D0651D /* BaseService.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		71A919212363354400D0651D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				71A919222363355800D0651D /* Logger.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		71A91924236335B500D0651D /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				71A91925236336AD00D0651D /* FetchMovieListUseCase.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		71A91927236339FE00D0651D /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				71A9192823633A1C00D0651D /* FetchMovieListRepository.swift */,
+				71A9192A23633A3100D0651D /* FetchMovieListService.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
 		937D66ED59FC0308E11677B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +241,11 @@
 		F12F3E9E23632A6400183C46 /* HooqApp */ = {
 			isa = PBXGroup;
 			children = (
+				71A9190F2363328400D0651D /* Data */,
+				71A919102363328E00D0651D /* Domain */,
+				71A9190E2363327700D0651D /* Presentation */,
+				71A919112363329C00D0651D /* Device */,
 				F12F3E9F23632A6400183C46 /* AppDelegate.swift */,
-				F12F3EA123632A6400183C46 /* ViewController.swift */,
 				F12F3EA323632A6400183C46 /* Main.storyboard */,
 				F12F3EA623632A6500183C46 /* Assets.xcassets */,
 				F12F3EA823632A6500183C46 /* LaunchScreen.storyboard */,
@@ -375,8 +482,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12F3EA223632A6400183C46 /* ViewController.swift in Sources */,
+				71A91926236336AD00D0651D /* FetchMovieListUseCase.swift in Sources */,
 				F12F3EA023632A6400183C46 /* AppDelegate.swift in Sources */,
+				71A91914236333AA00D0651D /* MovieListViewController.swift in Sources */,
+				71A919172363341A00D0651D /* BaseViewController.swift in Sources */,
+				71A9191B2363347000D0651D /* MovieListRouter.swift in Sources */,
+				71A9192B23633A3100D0651D /* FetchMovieListService.swift in Sources */,
+				71A9192923633A1C00D0651D /* FetchMovieListRepository.swift in Sources */,
+				71A919202363350200D0651D /* BaseService.swift in Sources */,
+				71A919192363345600D0651D /* MovieListPresenter.swift in Sources */,
+				71A9191D2363348100D0651D /* MovieListConfigurator.swift in Sources */,
+				71A919232363355800D0651D /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
