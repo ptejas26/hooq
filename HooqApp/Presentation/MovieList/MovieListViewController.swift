@@ -1,20 +1,19 @@
 //
-//  ViewController.swift
+//  MovieListViewController.swift
 //  HooqApp
 //
-//  Created by Balaji Galave on 10/25/19.
+//  Created by Balaji Galave on 25/10/19.
 //  Copyright © 2019 Balaji Galave. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MovieListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
