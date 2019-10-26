@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C429EDD0711D4B31CD8063E860CBF33"
+               BlueprintIdentifier = "7F2D4FEAECA6B08D82A71BF6D6ACA5EA"
                BuildableName = "Pods_HooqApp.framework"
                BlueprintName = "Pods-HooqApp"
                ReferencedContainer = "container:Pods.xcodeproj">

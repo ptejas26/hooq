@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol MovieListRouter {
+    
+}
+
+class MovieListRouterImpl: MovieListRouter {
+    
+}
