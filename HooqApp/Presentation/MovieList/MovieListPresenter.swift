@@ -20,18 +20,27 @@ class MovieListPresenterImpl: MovieListPresenter {
     private weak var movieListView: MovieListView?
     
     private var movies = [Movie]()
+    private var currentPage: Int = 0
+    private var totalNumberOfPages: Int = 1
     
     init(useCase: FetchMovieListUseCase, movieListView: MovieListView) {
         self.fetchMovieListUseCase = useCase
         self.movieListView = movieListView
+        currentPage = 0
     }
     
     func fetchMoviesList() {
         
-        fetchMovieListUseCase.fetchMovieList(with: .nowPlaying(pageNumber: 1)) { [weak self] (result) in
+        currentPage += 1
+        guard currentPage <= totalNumberOfPages else {
+            return
+        }
+        
+        fetchMovieListUseCase.fetchMovieList(with: .nowPlaying(pageNumber: currentPage)) { [weak self] (result) in
             switch result {
             case .success(let moviesInfo):
-                self?.movies = moviesInfo.movies
+                self?.movies.append(contentsOf: moviesInfo.movies)
+                self?.totalNumberOfPages = moviesInfo.totalPages
                 self?.movieListView?.reloadData()
                 
             case .failure(let error):

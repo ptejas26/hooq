@@ -16,6 +16,7 @@ enum MovieType {
 struct MoviesInfo {
     let movies: [Movie]
     let pageNumer: Int
+    let totalPages: Int
 }
 
 struct Movie {
