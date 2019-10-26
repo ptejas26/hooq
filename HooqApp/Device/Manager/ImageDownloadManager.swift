@@ -45,7 +45,7 @@ struct ImageDownloadManager {
     
 }
 
-struct ImageDownloadManagerImpl: ImageDownloadManagerProtocol {
+fileprivate struct ImageDownloadManagerImpl: ImageDownloadManagerProtocol {
     
     func download(with urlString: String, for imageView: UIImageView) {
         imageView.sd_setImage(with: URL(string: urlString), placeholderImage: nil)

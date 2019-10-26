@@ -30,12 +30,12 @@ class MovieListConfiguratorImpl: MovieListConfigurator {
 
 extension MovieListConfigurator {
     
-    static func movieListConfigurator(with movieListView: MovieListView) -> MovieListConfiguratorImpl {
+    static func movieListConfigurator(with movieListView: MovieListViewController) -> MovieListConfiguratorImpl {
         let service = FetchMovieListServiceImpl()
         let repository = FetchMovieListRepositoryImpl(service: service)
         let usecase = FetchMovieListUseCaseImpl(repository: repository)
         let presenter = MovieListPresenterImpl(useCase: usecase, movieListView: movieListView)
-        let router = MovieListRouterImpl()
+        let router = MovieListRouterImpl(viewController: movieListView)
         
         return MovieListConfiguratorImpl(presenter: presenter, router: router)
     }

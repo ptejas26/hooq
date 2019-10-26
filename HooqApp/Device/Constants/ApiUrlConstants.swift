@@ -52,8 +52,9 @@ struct ApiUrlConstants {
     // http://image.tmdb.org/t/p/w500/tBuabjEqxzoUBHfbyNbd8ulgy5j.jpg
     struct ImageUrl {
         
-        static func imageUrl(from posterPath: String) -> String {
-            return HostUrl.imageBaseUrl + posterPath
+        static func imageUrl(from posterPath: String?) -> String? {
+            guard let stringUrl = posterPath else { return nil }
+            return HostUrl.imageBaseUrl + stringUrl
         }
     }
     
