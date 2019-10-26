@@ -7,6 +7,7 @@ target 'HooqApp' do
 
   # Pods for HooqApp
   pod 'Alamofire'
+  pod 'SDWebImage'
 
   target 'HooqAppTests' do
     inherit! :search_paths

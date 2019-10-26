@@ -20,6 +20,7 @@ struct ApiUrlConstants {
         private static let movieBaseUrl = "https://api.themoviedb.org/"
         private static let version = "3/"
         static let moviePath = movieBaseUrl + version + "movie/"
+        static let imageBaseUrl = "http://image.tmdb.org/t/p/w500"
     }
     
     struct MovieInfo {
@@ -45,6 +46,14 @@ struct ApiUrlConstants {
             }
             
             return (url, parameters)
+        }
+    }
+    
+    // http://image.tmdb.org/t/p/w500/tBuabjEqxzoUBHfbyNbd8ulgy5j.jpg
+    struct ImageUrl {
+        
+        static func imageUrl(from posterPath: String) -> String {
+            return HostUrl.imageBaseUrl + posterPath
         }
     }
     

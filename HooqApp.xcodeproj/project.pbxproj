@@ -25,6 +25,11 @@
 		71A91936236343D500D0651D /* MovieListApiToUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A91935236343D500D0651D /* MovieListApiToUIMapper.swift */; };
 		71A919392363492300D0651D /* ApiUrlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919382363492300D0651D /* ApiUrlConstants.swift */; };
 		71A9193B236357FF00D0651D /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9193A236357FF00D0651D /* DateUtility.swift */; };
+		71A9193F236376A100D0651D /* MoviePosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9193D236376A100D0651D /* MoviePosterCollectionViewCell.swift */; };
+		71A91940236376A100D0651D /* MoviePosterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A9193E236376A100D0651D /* MoviePosterCollectionViewCell.xib */; };
+		71A9194323638B7400D0651D /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9194223638B7400D0651D /* ImageDownloadManager.swift */; };
+		71A919462363EA8600D0651D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919452363EA8600D0651D /* UIView+Extension.swift */; };
+		71A919482363EAC600D0651D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919472363EAC600D0651D /* UIColor+Extension.swift */; };
 		A8DCEDC30D4629CA54FE1446 /* Pods_HooqApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */; };
 		F12F3EA023632A6400183C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3E9F23632A6400183C46 /* AppDelegate.swift */; };
 		F12F3EA523632A6400183C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA323632A6400183C46 /* Main.storyboard */; };
@@ -72,6 +77,11 @@
 		71A91935236343D500D0651D /* MovieListApiToUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListApiToUIMapper.swift; sourceTree = "<group>"; };
 		71A919382363492300D0651D /* ApiUrlConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlConstants.swift; sourceTree = "<group>"; };
 		71A9193A236357FF00D0651D /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
+		71A9193D236376A100D0651D /* MoviePosterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCollectionViewCell.swift; sourceTree = "<group>"; };
+		71A9193E236376A100D0651D /* MoviePosterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviePosterCollectionViewCell.xib; sourceTree = "<group>"; };
+		71A9194223638B7400D0651D /* ImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
+		71A919452363EA8600D0651D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		71A919472363EAC600D0651D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		791D4DEF91155B0E513ED91C /* Pods-HooqAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppTests/Pods-HooqAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB82DBE2D700AF92F572CBF7 /* Pods-HooqAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppUITests/Pods-HooqAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +158,8 @@
 		71A919112363329C00D0651D /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				71A919442363EA5F00D0651D /* Exstensions */,
+				71A9194123638B5000D0651D /* Manager */,
 				71A919372363490900D0651D /* Constants */,
 				71A919212363354400D0651D /* Utility */,
 			);
@@ -157,6 +169,7 @@
 		71A919122363333B00D0651D /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				71A9193C2363766900D0651D /* View */,
 				71A91913236333AA00D0651D /* MovieListViewController.swift */,
 				71A919182363345600D0651D /* MovieListPresenter.swift */,
 				71A9191C2363348100D0651D /* MovieListConfigurator.swift */,
@@ -241,6 +254,32 @@
 				71A919382363492300D0651D /* ApiUrlConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		71A9193C2363766900D0651D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71A9193D236376A100D0651D /* MoviePosterCollectionViewCell.swift */,
+				71A9193E236376A100D0651D /* MoviePosterCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71A9194123638B5000D0651D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				71A9194223638B7400D0651D /* ImageDownloadManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		71A919442363EA5F00D0651D /* Exstensions */ = {
+			isa = PBXGroup;
+			children = (
+				71A919452363EA8600D0651D /* UIView+Extension.swift */,
+				71A919472363EAC600D0651D /* UIColor+Extension.swift */,
+			);
+			path = Exstensions;
 			sourceTree = "<group>";
 		};
 		937D66ED59FC0308E11677B8 /* Frameworks */ = {
@@ -432,6 +471,7 @@
 			files = (
 				F12F3EAA23632A6500183C46 /* LaunchScreen.storyboard in Resources */,
 				F12F3EA723632A6500183C46 /* Assets.xcassets in Resources */,
+				71A91940236376A100D0651D /* MoviePosterCollectionViewCell.xib in Resources */,
 				F12F3EA523632A6400183C46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,10 +537,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -532,6 +574,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A919482363EAC600D0651D /* UIColor+Extension.swift in Sources */,
+				71A9193F236376A100D0651D /* MoviePosterCollectionViewCell.swift in Sources */,
 				71A91926236336AD00D0651D /* FetchMovieListUseCase.swift in Sources */,
 				F12F3EA023632A6400183C46 /* AppDelegate.swift in Sources */,
 				71A91914236333AA00D0651D /* MovieListViewController.swift in Sources */,
@@ -542,12 +586,14 @@
 				71A9192923633A1C00D0651D /* FetchMovieListRepository.swift in Sources */,
 				71A91936236343D500D0651D /* MovieListApiToUIMapper.swift in Sources */,
 				71A9193323633F7800D0651D /* MovieResponse.swift in Sources */,
+				71A9194323638B7400D0651D /* ImageDownloadManager.swift in Sources */,
 				71A919202363350200D0651D /* BaseService.swift in Sources */,
 				71A919392363492300D0651D /* ApiUrlConstants.swift in Sources */,
 				71A919192363345600D0651D /* MovieListPresenter.swift in Sources */,
 				71A9191D2363348100D0651D /* MovieListConfigurator.swift in Sources */,
 				71A9192E23633AA700D0651D /* MoviesInfo.swift in Sources */,
 				71A919232363355800D0651D /* Logger.swift in Sources */,
+				71A919462363EA8600D0651D /* UIView+Extension.swift in Sources */,
 				71A9193223633F7800D0651D /* MoviesInfoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,6 +773,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8WFB9U9CW;
 				INFOPLIST_FILE = HooqApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,6 +793,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8WFB9U9CW;
 				INFOPLIST_FILE = HooqApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

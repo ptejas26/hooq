@@ -16,4 +16,14 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func setupNavigationBar() {
+        navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.tintColor = UIColor.navigationTint()
+        navigationController?.navigationBar.barStyle = .default
+        navigationController?.navigationBar.backgroundColor = UIColor.navigationBarBackground()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
+    }
+    
 }

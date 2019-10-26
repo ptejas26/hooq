@@ -23,7 +23,9 @@ struct MovieListApiToUIMapper {
     private static func getMovie(from movieResponse: MovieResponse) -> Movie {
         let year = DateUtility.year(from: movieResponse.releaseDate)
         
-        let movie = Movie(title: movieResponse.title ?? "", description: movieResponse.overview ?? "", releaseYear: year, posterUrl: movieResponse.posterPath)
+        let postUrl = ApiUrlConstants.ImageUrl.imageUrl(from: movieResponse.posterPath ?? "")
+        
+        let movie = Movie(title: movieResponse.title ?? "", description: movieResponse.overview ?? "", releaseYear: year, posterUrl: postUrl)
         
         return movie
     }
