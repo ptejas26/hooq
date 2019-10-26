@@ -27,7 +27,7 @@ class MoviePosterCollectionViewCell: UICollectionViewCell {
         guard let url = movie.posterUrl else {
             return
         }
-        ImageDownloadManager.download(with: url, for: imageView)
+        ImageDownloadManager.shared.download(with: url, for: imageView)
     }
 
 }

@@ -119,7 +119,7 @@ extension MovieListViewController: UICollectionViewDataSourcePrefetching {
             }
             return nil
         }
-        ImageDownloadManager.prefetchImages(with: stringUrls)
+        ImageDownloadManager.shared.prefetchImages(with:stringUrls)
     }
 }
 
