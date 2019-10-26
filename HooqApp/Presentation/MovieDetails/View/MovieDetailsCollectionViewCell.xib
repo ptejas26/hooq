@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieDetailsCollectionViewCell" id="gTV-IL-0wX" customClass="MovieDetailsCollectionViewCell" customModule="HooqApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="289" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-5m-rvj" userLabel="BackgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="289" height="196"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OPT-W5-xtg">
+                                <rect key="frame" x="8" y="8" width="273" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="WOH-UV-Q0b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OPT-W5-xtg" firstAttribute="leading" secondItem="a3S-5m-rvj" secondAttribute="leading" constant="8" id="3YA-oe-dIb"/>
+                            <constraint firstAttribute="trailing" secondItem="OPT-W5-xtg" secondAttribute="trailing" constant="8" id="TcJ-pR-pmz"/>
+                            <constraint firstAttribute="bottom" secondItem="OPT-W5-xtg" secondAttribute="bottom" constant="8" id="c8V-uG-pg9"/>
+                            <constraint firstItem="OPT-W5-xtg" firstAttribute="top" secondItem="a3S-5m-rvj" secondAttribute="top" constant="8" id="igJ-H8-UUE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="a3S-5m-rvj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S0Y-60-t2c"/>
+                <constraint firstItem="a3S-5m-rvj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VI4-L2-oQ9"/>
+                <constraint firstAttribute="trailing" secondItem="a3S-5m-rvj" secondAttribute="trailing" id="qJO-QY-GPj"/>
+                <constraint firstAttribute="bottom" secondItem="a3S-5m-rvj" secondAttribute="bottom" id="r8o-EP-QGV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="289" height="196"/>
+            <connections>
+                <outlet property="posterImageView" destination="OPT-W5-xtg" id="qHb-hH-cUc"/>
+            </connections>
+            <point key="canvasLocation" x="-28.260869565217394" y="63.28125"/>
+        </collectionViewCell>
+    </objects>
+</document>

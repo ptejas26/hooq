@@ -30,6 +30,16 @@
 		71A9194323638B7400D0651D /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9194223638B7400D0651D /* ImageDownloadManager.swift */; };
 		71A919462363EA8600D0651D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919452363EA8600D0651D /* UIView+Extension.swift */; };
 		71A919482363EAC600D0651D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919472363EAC600D0651D /* UIColor+Extension.swift */; };
+		71A9194B23640E6B00D0651D /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9194A23640E6B00D0651D /* MovieDetailsViewController.swift */; };
+		71A9194D23640EA200D0651D /* ViewUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9194C23640EA200D0651D /* ViewUtility.swift */; };
+		71A9194F236410B100D0651D /* MovieDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9194E236410B100D0651D /* MovieDetailsPresenter.swift */; };
+		71A91951236410E200D0651D /* MovieDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A91950236410E200D0651D /* MovieDetailsConfigurator.swift */; };
+		71A91953236410F400D0651D /* MovieDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A91952236410F400D0651D /* MovieDetailsRouter.swift */; };
+		71A919572364228C00D0651D /* MovieDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919552364228C00D0651D /* MovieDetailsCollectionViewCell.swift */; };
+		71A919582364228C00D0651D /* MovieDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A919562364228C00D0651D /* MovieDetailsCollectionViewCell.xib */; };
+		71A9195A2364306500D0651D /* HooqUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919592364306500D0651D /* HooqUtility.swift */; };
+		71A9195D2364554800D0651D /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A9195B2364554800D0651D /* LabelCollectionViewCell.swift */; };
+		71A9195E2364554800D0651D /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A9195C2364554800D0651D /* LabelCollectionViewCell.xib */; };
 		A8DCEDC30D4629CA54FE1446 /* Pods_HooqApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */; };
 		F12F3EA023632A6400183C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3E9F23632A6400183C46 /* AppDelegate.swift */; };
 		F12F3EA523632A6400183C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA323632A6400183C46 /* Main.storyboard */; };
@@ -82,6 +92,16 @@
 		71A9194223638B7400D0651D /* ImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		71A919452363EA8600D0651D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		71A919472363EAC600D0651D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		71A9194A23640E6B00D0651D /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		71A9194C23640EA200D0651D /* ViewUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtility.swift; sourceTree = "<group>"; };
+		71A9194E236410B100D0651D /* MovieDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsPresenter.swift; sourceTree = "<group>"; };
+		71A91950236410E200D0651D /* MovieDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsConfigurator.swift; sourceTree = "<group>"; };
+		71A91952236410F400D0651D /* MovieDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRouter.swift; sourceTree = "<group>"; };
+		71A919552364228C00D0651D /* MovieDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		71A919562364228C00D0651D /* MovieDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		71A919592364306500D0651D /* HooqUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HooqUtility.swift; sourceTree = "<group>"; };
+		71A9195B2364554800D0651D /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		71A9195C2364554800D0651D /* LabelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCollectionViewCell.xib; sourceTree = "<group>"; };
 		791D4DEF91155B0E513ED91C /* Pods-HooqAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppTests/Pods-HooqAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB82DBE2D700AF92F572CBF7 /* Pods-HooqAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HooqAppUITests/Pods-HooqAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +154,7 @@
 			children = (
 				71A91915236333F600D0651D /* Common */,
 				71A919122363333B00D0651D /* MovieList */,
+				71A9194923640E3000D0651D /* MovieDetails */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -199,6 +220,8 @@
 			children = (
 				71A919222363355800D0651D /* Logger.swift */,
 				71A9193A236357FF00D0651D /* DateUtility.swift */,
+				71A9194C23640EA200D0651D /* ViewUtility.swift */,
+				71A919592364306500D0651D /* HooqUtility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -280,6 +303,29 @@
 				71A919472363EAC600D0651D /* UIColor+Extension.swift */,
 			);
 			path = Exstensions;
+			sourceTree = "<group>";
+		};
+		71A9194923640E3000D0651D /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				71A919542364225500D0651D /* View */,
+				71A9194A23640E6B00D0651D /* MovieDetailsViewController.swift */,
+				71A9194E236410B100D0651D /* MovieDetailsPresenter.swift */,
+				71A91950236410E200D0651D /* MovieDetailsConfigurator.swift */,
+				71A91952236410F400D0651D /* MovieDetailsRouter.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		71A919542364225500D0651D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71A919552364228C00D0651D /* MovieDetailsCollectionViewCell.swift */,
+				71A919562364228C00D0651D /* MovieDetailsCollectionViewCell.xib */,
+				71A9195B2364554800D0651D /* LabelCollectionViewCell.swift */,
+				71A9195C2364554800D0651D /* LabelCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		937D66ED59FC0308E11677B8 /* Frameworks */ = {
@@ -469,6 +515,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A919582364228C00D0651D /* MovieDetailsCollectionViewCell.xib in Resources */,
+				71A9195E2364554800D0651D /* LabelCollectionViewCell.xib in Resources */,
 				F12F3EAA23632A6500183C46 /* LaunchScreen.storyboard in Resources */,
 				F12F3EA723632A6500183C46 /* Assets.xcassets in Resources */,
 				71A91940236376A100D0651D /* MoviePosterCollectionViewCell.xib in Resources */,
@@ -576,6 +624,7 @@
 			files = (
 				71A919482363EAC600D0651D /* UIColor+Extension.swift in Sources */,
 				71A9193F236376A100D0651D /* MoviePosterCollectionViewCell.swift in Sources */,
+				71A919572364228C00D0651D /* MovieDetailsCollectionViewCell.swift in Sources */,
 				71A91926236336AD00D0651D /* FetchMovieListUseCase.swift in Sources */,
 				F12F3EA023632A6400183C46 /* AppDelegate.swift in Sources */,
 				71A91914236333AA00D0651D /* MovieListViewController.swift in Sources */,
@@ -587,14 +636,21 @@
 				71A91936236343D500D0651D /* MovieListApiToUIMapper.swift in Sources */,
 				71A9193323633F7800D0651D /* MovieResponse.swift in Sources */,
 				71A9194323638B7400D0651D /* ImageDownloadManager.swift in Sources */,
+				71A9194D23640EA200D0651D /* ViewUtility.swift in Sources */,
+				71A9195A2364306500D0651D /* HooqUtility.swift in Sources */,
+				71A91951236410E200D0651D /* MovieDetailsConfigurator.swift in Sources */,
 				71A919202363350200D0651D /* BaseService.swift in Sources */,
+				71A91953236410F400D0651D /* MovieDetailsRouter.swift in Sources */,
 				71A919392363492300D0651D /* ApiUrlConstants.swift in Sources */,
 				71A919192363345600D0651D /* MovieListPresenter.swift in Sources */,
+				71A9194B23640E6B00D0651D /* MovieDetailsViewController.swift in Sources */,
 				71A9191D2363348100D0651D /* MovieListConfigurator.swift in Sources */,
 				71A9192E23633AA700D0651D /* MoviesInfo.swift in Sources */,
+				71A9194F236410B100D0651D /* MovieDetailsPresenter.swift in Sources */,
 				71A919232363355800D0651D /* Logger.swift in Sources */,
 				71A919462363EA8600D0651D /* UIView+Extension.swift in Sources */,
 				71A9193223633F7800D0651D /* MoviesInfoResponse.swift in Sources */,
+				71A9195D2364554800D0651D /* LabelCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,7 +829,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8WFB9U9CW;
 				INFOPLIST_FILE = HooqApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -781,7 +837,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hooq.HooqApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -793,7 +849,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8WFB9U9CW;
 				INFOPLIST_FILE = HooqApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -801,7 +857,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hooq.HooqApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

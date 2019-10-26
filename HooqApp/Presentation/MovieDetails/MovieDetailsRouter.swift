@@ -1,22 +1,25 @@
 //
-//  MovieListRouter.swift
+//  MovieDetailsRouter.swift
 //  HooqApp
 //
-//  Created by Balaji Galave on 25/10/19.
+//  Created by Balaji Galave on 26/10/19.
 //  Copyright © 2019 Balaji Galave. All rights reserved.
 //
 
 import Foundation
 
-protocol MovieListRouter {
+protocol MovieDetailsRouter {
+    var movieDetails: Movie { set get }
     func pushMovieDetailsScreen(with movie: Movie)
 }
 
-class MovieListRouterImpl: MovieListRouter {
+class MovieDetailsRouterImpl: MovieDetailsRouter {
     
-    let viewController: MovieListViewController
+    var movieDetails: Movie
+    let viewController: MovieDetailsViewController
     
-    init(viewController: MovieListViewController) {
+    init(movieDetails: Movie, viewController: MovieDetailsViewController) {
+        self.movieDetails  = movieDetails
         self.viewController = viewController
     }
     
@@ -29,5 +32,4 @@ class MovieListRouterImpl: MovieListRouter {
         movieDetailsViewController.configurator = MovieDetailsConfiguratorImpl.movieDetailsConfigurator(with: movieDetailsViewController, router: router)
         viewController.navigationController?.pushViewController(movieDetailsViewController, animated: true)
     }
-    
 }

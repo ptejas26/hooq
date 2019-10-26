@@ -20,8 +20,10 @@ struct MoviesInfo {
 }
 
 struct Movie {
+    let id: Int
     let title: String
     let description: String
     let releaseYear: Int
     let posterUrl: String?
+    let backdropUrl: String?
 }

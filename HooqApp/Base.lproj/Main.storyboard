@@ -11,7 +11,7 @@
         <!--Movie List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MovieListViewController" customModule="HooqApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieListViewControllerId" id="BYZ-38-t0r" customClass="MovieListViewController" customModule="HooqApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="QOa-Re-tRB">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsViewControllerId" id="Us2-Rn-FJz" customClass="MovieDetailsViewController" customModule="HooqApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjP-cz-A68">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-uU-Y1S">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kgO-f2-pox">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t55-9c-0AY" firstAttribute="bottom" secondItem="9QV-uU-Y1S" secondAttribute="bottom" id="5s9-uU-GS0"/>
+                            <constraint firstItem="9QV-uU-Y1S" firstAttribute="top" secondItem="t55-9c-0AY" secondAttribute="top" id="GRW-vg-HCU"/>
+                            <constraint firstItem="t55-9c-0AY" firstAttribute="trailing" secondItem="9QV-uU-Y1S" secondAttribute="trailing" id="IAr-08-7m0"/>
+                            <constraint firstItem="9QV-uU-Y1S" firstAttribute="leading" secondItem="t55-9c-0AY" secondAttribute="leading" id="Ni6-AE-Nnv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t55-9c-0AY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="9QV-uU-Y1S" id="pXG-5x-cdA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qg0-6z-EVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L5g-gX-guZ">

@@ -14,4 +14,5 @@ struct MovieResponse: Codable {
     let posterPath : String?
     let releaseDate : String?
 	let overview : String?
+    let backdropPath: String?
 }

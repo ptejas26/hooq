@@ -12,7 +12,7 @@ protocol MovieListView: class {
     func reloadData()
 }
 
-/// This follows MVP-Clean architectural pattern
+/// This flow MVP-Clean architectural pattern
 class MovieListViewController: BaseViewController {
     
     struct Constant {
@@ -44,17 +44,15 @@ class MovieListViewController: BaseViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        configurator = MovieListConfiguratorImpl.movieListConfigurator(with: self)
-        configurator.configure(viewController: self)
-        presenter?.fetchMoviesList()
+        self.configurator = MovieListConfiguratorImpl.movieListConfigurator(with: self)
+        if let configurator = configurator {
+            configurator.configure(viewController: self)
+        }
         
+        presenter?.fetchMoviesList()
         setupNavigationBar()
         
-        if #available(iOS 13.0, *) {
-            collectionView.setCollectionViewLayout(makeLayout(), animated: true)
-        } else {
-            // Fallback on earlier versions
-        }
+        collectionView.setCollectionViewLayout(makeLayout(), animated: true)
     }
     
     override func setupNavigationBar() {
@@ -73,7 +71,7 @@ extension MovieListViewController: UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.cellId, for: indexPath) as? MoviePosterCollectionViewCell,
             let movie = presenter?.movie(at: indexPath.item) else {
-            return UICollectionViewCell()
+                return UICollectionViewCell()
         }
         cell.configureCell(with: movie)
         cell.layer.shouldRasterize = true
@@ -82,7 +80,11 @@ extension MovieListViewController: UICollectionViewDataSource, UICollectionViewD
         return cell
     }
     
-    @available(iOS 13.0, *)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let movie = presenter?.movie(at: indexPath.item) else { return }
+        router?.pushMovieDetailsScreen(with: movie)
+    }
+    
     func makeLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (section: Int, environment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
             let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: NSCollectionLayoutDimension.fractionalWidth(1.0), heightDimension: NSCollectionLayoutDimension.absolute(170)))
