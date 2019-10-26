@@ -76,6 +76,9 @@ extension MovieListViewController: UICollectionViewDataSource, UICollectionViewD
             return UICollectionViewCell()
         }
         cell.configureCell(with: movie)
+        cell.layer.shouldRasterize = true
+        cell.layer.rasterizationScale = UIScreen.main.scale
+        
         return cell
     }
     
@@ -91,6 +94,16 @@ extension MovieListViewController: UICollectionViewDataSource, UICollectionViewD
             return section
         }
         return layout
+    }
+    
+    // Prefeching of next pages shall be handled in different way but for time being this is what we are doing
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let totalCount = presenter?.numberOfItems else {
+            return
+        }
+        if indexPath.item == (totalCount - 10) {
+            presenter?.fetchMoviesList()
+        }
     }
     
 }
