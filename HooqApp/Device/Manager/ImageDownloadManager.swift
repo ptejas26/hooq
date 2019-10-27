@@ -14,7 +14,7 @@ protocol ImageDownloadManagerProtocol {
     func prefetchImages(with stringUrls: [String])
 }
 
-struct ImageDownloadManager {
+class ImageDownloadManager {
     
     private var imageDownloadManagerProtocol: ImageDownloadManagerProtocol?
     private static var imageDownloadManager: ImageDownloadManager?
@@ -31,7 +31,7 @@ struct ImageDownloadManager {
         return imageDownloadManager!
     }
     
-    mutating func set(imageDownloadManagerProtocol: ImageDownloadManagerProtocol) {
+    func set(imageDownloadManagerProtocol: ImageDownloadManagerProtocol) {
         self.imageDownloadManagerProtocol = imageDownloadManagerProtocol
     }
     

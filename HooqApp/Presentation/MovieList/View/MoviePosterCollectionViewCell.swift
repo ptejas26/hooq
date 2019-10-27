@@ -10,7 +10,7 @@ import UIKit
 
 class MoviePosterCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet private weak var viewBackground: UIView! {
         didSet {
             viewBackground.round(with: 4, withBorder: false, borderColor: UIColor.clear)

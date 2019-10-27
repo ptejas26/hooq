@@ -10,15 +10,18 @@ import UIKit
 
 class LabelCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet private weak var label: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var label: UILabel!
     
     func configureCell(with movie: Movie) {
         label.attributedText = HooqUtility.getAttributedInformation(from: movie)
     }
 
+}
+
+
+extension LabelCollectionViewCell {
+    /// Used only for Unit Test
+    var attributedText: NSAttributedString? {
+        return label.attributedText
+    }
 }
