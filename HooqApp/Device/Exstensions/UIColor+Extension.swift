@@ -18,8 +18,4 @@ extension UIColor {
         return .white
     }
     
-    class func movieCellBorder() -> UIColor {
-        return #colorLiteral(red: 0.862745098, green: 0.862745098, blue: 0.862745098, alpha: 1)
-    }
-    
 }

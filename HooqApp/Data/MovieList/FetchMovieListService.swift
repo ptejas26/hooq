@@ -14,6 +14,8 @@ protocol FetchMovieListService {
     func fetchMovieList(with type: MovieType, completion: @escaping CompletionMoviesInfoResponse)
 }
 
+let customError = NSError(domain: "com.hooq.movielist", code: 202020, userInfo: nil)
+
 class FetchMovieListServiceImpl: BaseService, FetchMovieListService {
     
     func fetchMovieList(with type: MovieType, completion: @escaping CompletionMoviesInfoResponse) {
@@ -21,7 +23,7 @@ class FetchMovieListServiceImpl: BaseService, FetchMovieListService {
         let (urlString, parameters) = ApiUrlConstants.MovieInfo.apiUrlInformation(for: type)
         
         guard let url = URL(string: urlString) else {
-            completion(.failure(NSError(domain: "com.hooq.categotylist", code: 45454, userInfo: nil) as Error))
+            completion(.failure(customError as Error))
             return
         }
         

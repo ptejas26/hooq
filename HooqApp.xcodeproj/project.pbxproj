@@ -9,6 +9,25 @@
 /* Begin PBXBuildFile section */
 		20DCF99A751F7E3995808178 /* Pods_HooqAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1492CE9100BDD41E195D0C5 /* Pods_HooqAppUITests.framework */; };
 		6E16E5671762E7A18CECB73F /* Pods_HooqAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B83A41A02532CC7F834D1B /* Pods_HooqAppTests.framework */; };
+		717631202364B49B00F65014 /* moviesInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 7176311F2364B49B00F65014 /* moviesInfo.json */; };
+		717631222364B4F000F65014 /* StubGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631212364B4F000F65014 /* StubGenerator.swift */; };
+		717631262364B58500F65014 /* FetchMovieListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631252364B58500F65014 /* FetchMovieListUseCaseTests.swift */; };
+		717631292364B5C600F65014 /* MockFetchMovieListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631282364B5C600F65014 /* MockFetchMovieListService.swift */; };
+		7176312C2364BAFE00F65014 /* MovieListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176312B2364BAFE00F65014 /* MovieListPresenterTests.swift */; };
+		717631302364C27D00F65014 /* MovieDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176312F2364C27D00F65014 /* MovieDetailsPresenterTests.swift */; };
+		717631322365314800F65014 /* MovieListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631312365314800F65014 /* MovieListViewControllerTests.swift */; };
+		7176313623653C2A00F65014 /* MockImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176313523653C2A00F65014 /* MockImageDownloadManager.swift */; };
+		717631382365434C00F65014 /* MovieDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631372365434C00F65014 /* MovieDetailsViewControllerTests.swift */; };
+		7176313A2365497A00F65014 /* ImageDownloadManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631392365497A00F65014 /* ImageDownloadManagerTests.swift */; };
+		7176313C23654B2C00F65014 /* DateUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176313B23654B2C00F65014 /* DateUtilityTests.swift */; };
+		7176313E23654C5400F65014 /* ViewUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176313D23654C5400F65014 /* ViewUtilityTests.swift */; };
+		7176314023654D6200F65014 /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176313F23654D6200F65014 /* UIColorExtensionTests.swift */; };
+		7176314223654F1B00F65014 /* HooqUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176314123654F1B00F65014 /* HooqUtilityTests.swift */; };
+		717631462365537800F65014 /* MovieDetailsCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631452365537800F65014 /* MovieDetailsCollectionViewCellTests.swift */; };
+		717631482365561600F65014 /* LabelCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717631472365561600F65014 /* LabelCollectionViewCellTests.swift */; };
+		7176314C2365585600F65014 /* MovieListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176314B2365585600F65014 /* MovieListRouterTests.swift */; };
+		7176314E23655A0800F65014 /* MovieDetailsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176314D23655A0800F65014 /* MovieDetailsRouterTests.swift */; };
+		7176315023655B1D00F65014 /* MoviePosterCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176314F23655B1D00F65014 /* MoviePosterCollectionViewCellTests.swift */; };
 		71A91914236333AA00D0651D /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A91913236333AA00D0651D /* MovieListViewController.swift */; };
 		71A919172363341A00D0651D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919162363341A00D0651D /* BaseViewController.swift */; };
 		71A919192363345600D0651D /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A919182363345600D0651D /* MovieListPresenter.swift */; };
@@ -45,7 +64,6 @@
 		F12F3EA523632A6400183C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA323632A6400183C46 /* Main.storyboard */; };
 		F12F3EA723632A6500183C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA623632A6500183C46 /* Assets.xcassets */; };
 		F12F3EAA23632A6500183C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F3EA823632A6500183C46 /* LaunchScreen.storyboard */; };
-		F12F3EB523632A6500183C46 /* HooqAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3EB423632A6500183C46 /* HooqAppTests.swift */; };
 		F12F3EC023632A6500183C46 /* HooqAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F3EBF23632A6500183C46 /* HooqAppUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +89,25 @@
 		2B2C03388F249C06E637EF6F /* Pods-HooqApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HooqApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HooqApp/Pods-HooqApp.release.xcconfig"; sourceTree = "<group>"; };
 		4566E393A5EB8B0271076A49 /* Pods_HooqApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B83A41A02532CC7F834D1B /* Pods_HooqAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooqAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7176311F2364B49B00F65014 /* moviesInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moviesInfo.json; sourceTree = "<group>"; };
+		717631212364B4F000F65014 /* StubGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubGenerator.swift; sourceTree = "<group>"; };
+		717631252364B58500F65014 /* FetchMovieListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieListUseCaseTests.swift; sourceTree = "<group>"; };
+		717631282364B5C600F65014 /* MockFetchMovieListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchMovieListService.swift; sourceTree = "<group>"; };
+		7176312B2364BAFE00F65014 /* MovieListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenterTests.swift; sourceTree = "<group>"; };
+		7176312F2364C27D00F65014 /* MovieDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		717631312365314800F65014 /* MovieListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewControllerTests.swift; sourceTree = "<group>"; };
+		7176313523653C2A00F65014 /* MockImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageDownloadManager.swift; sourceTree = "<group>"; };
+		717631372365434C00F65014 /* MovieDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		717631392365497A00F65014 /* ImageDownloadManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManagerTests.swift; sourceTree = "<group>"; };
+		7176313B23654B2C00F65014 /* DateUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilityTests.swift; sourceTree = "<group>"; };
+		7176313D23654C5400F65014 /* ViewUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtilityTests.swift; sourceTree = "<group>"; };
+		7176313F23654D6200F65014 /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
+		7176314123654F1B00F65014 /* HooqUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HooqUtilityTests.swift; sourceTree = "<group>"; };
+		717631452365537800F65014 /* MovieDetailsCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		717631472365561600F65014 /* LabelCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		7176314B2365585600F65014 /* MovieListRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListRouterTests.swift; sourceTree = "<group>"; };
+		7176314D23655A0800F65014 /* MovieDetailsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRouterTests.swift; sourceTree = "<group>"; };
+		7176314F23655B1D00F65014 /* MoviePosterCollectionViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		71A91913236333AA00D0651D /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		71A919162363341A00D0651D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		71A919182363345600D0651D /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
@@ -114,7 +151,6 @@
 		F12F3EA923632A6500183C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12F3EAB23632A6500183C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12F3EB023632A6500183C46 /* HooqAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HooqAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F12F3EB423632A6500183C46 /* HooqAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HooqAppTests.swift; sourceTree = "<group>"; };
 		F12F3EB623632A6500183C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12F3EBB23632A6500183C46 /* HooqAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HooqAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12F3EBF23632A6500183C46 /* HooqAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HooqAppUITests.swift; sourceTree = "<group>"; };
@@ -149,6 +185,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7176311E2364B47800F65014 /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				7176311F2364B49B00F65014 /* moviesInfo.json */,
+				717631212364B4F000F65014 /* StubGenerator.swift */,
+			);
+			path = TestUtils;
+			sourceTree = "<group>";
+		};
+		717631232364B54100F65014 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				717631242364B56C00F65014 /* MovieList */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		717631242364B56C00F65014 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				717631252364B58500F65014 /* FetchMovieListUseCaseTests.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		717631272364B5B600F65014 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				717631282364B5C600F65014 /* MockFetchMovieListService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7176312A2364BAB900F65014 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7176312D2364C16000F65014 /* MovieList */,
+				7176312E2364C24D00F65014 /* MovieDetails */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7176312D2364C16000F65014 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				7176312B2364BAFE00F65014 /* MovieListPresenterTests.swift */,
+				717631312365314800F65014 /* MovieListViewControllerTests.swift */,
+				7176314F23655B1D00F65014 /* MoviePosterCollectionViewCellTests.swift */,
+				7176314B2365585600F65014 /* MovieListRouterTests.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		7176312E2364C24D00F65014 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7176312F2364C27D00F65014 /* MovieDetailsPresenterTests.swift */,
+				717631372365434C00F65014 /* MovieDetailsViewControllerTests.swift */,
+				717631452365537800F65014 /* MovieDetailsCollectionViewCellTests.swift */,
+				717631472365561600F65014 /* LabelCollectionViewCellTests.swift */,
+				7176314D23655A0800F65014 /* MovieDetailsRouterTests.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		7176313323653BDE00F65014 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				7176313423653BE800F65014 /* Mock */,
+				717631392365497A00F65014 /* ImageDownloadManagerTests.swift */,
+				7176313B23654B2C00F65014 /* DateUtilityTests.swift */,
+				7176313D23654C5400F65014 /* ViewUtilityTests.swift */,
+				7176313F23654D6200F65014 /* UIColorExtensionTests.swift */,
+				7176314123654F1B00F65014 /* HooqUtilityTests.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		7176313423653BE800F65014 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				7176313523653C2A00F65014 /* MockImageDownloadManager.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		71A9190E2363327700D0651D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,7 +514,11 @@
 		F12F3EB323632A6500183C46 /* HooqAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				F12F3EB423632A6500183C46 /* HooqAppTests.swift */,
+				7176313323653BDE00F65014 /* Device */,
+				7176312A2364BAB900F65014 /* Presentation */,
+				717631272364B5B600F65014 /* Data */,
+				717631232364B54100F65014 /* Domain */,
+				7176311E2364B47800F65014 /* TestUtils */,
 				F12F3EB623632A6500183C46 /* Info.plist */,
 			);
 			path = HooqAppTests;
@@ -482,6 +608,7 @@
 					};
 					F12F3EAF23632A6500183C46 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1110;
 						TestTargetID = F12F3E9B23632A6400183C46;
 					};
 					F12F3EBA23632A6500183C46 = {
@@ -528,6 +655,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717631202364B49B00F65014 /* moviesInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +786,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12F3EB523632A6500183C46 /* HooqAppTests.swift in Sources */,
+				717631482365561600F65014 /* LabelCollectionViewCellTests.swift in Sources */,
+				717631382365434C00F65014 /* MovieDetailsViewControllerTests.swift in Sources */,
+				7176313A2365497A00F65014 /* ImageDownloadManagerTests.swift in Sources */,
+				7176313623653C2A00F65014 /* MockImageDownloadManager.swift in Sources */,
+				717631262364B58500F65014 /* FetchMovieListUseCaseTests.swift in Sources */,
+				717631322365314800F65014 /* MovieListViewControllerTests.swift in Sources */,
+				7176313E23654C5400F65014 /* ViewUtilityTests.swift in Sources */,
+				7176314C2365585600F65014 /* MovieListRouterTests.swift in Sources */,
+				717631292364B5C600F65014 /* MockFetchMovieListService.swift in Sources */,
+				7176314223654F1B00F65014 /* HooqUtilityTests.swift in Sources */,
+				7176314E23655A0800F65014 /* MovieDetailsRouterTests.swift in Sources */,
+				7176314023654D6200F65014 /* UIColorExtensionTests.swift in Sources */,
+				7176315023655B1D00F65014 /* MoviePosterCollectionViewCellTests.swift in Sources */,
+				717631222364B4F000F65014 /* StubGenerator.swift in Sources */,
+				717631462365537800F65014 /* MovieDetailsCollectionViewCellTests.swift in Sources */,
+				7176312C2364BAFE00F65014 /* MovieListPresenterTests.swift in Sources */,
+				7176313C23654B2C00F65014 /* DateUtilityTests.swift in Sources */,
+				717631302364C27D00F65014 /* MovieDetailsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,7 +901,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -811,7 +956,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -867,6 +1012,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8WFB9U9CW;
 				INFOPLIST_FILE = HooqAppTests/Info.plist;
@@ -877,6 +1023,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hooq.HooqAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HooqApp.app/HooqApp";
@@ -889,6 +1036,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8WFB9U9CW;
 				INFOPLIST_FILE = HooqAppTests/Info.plist;

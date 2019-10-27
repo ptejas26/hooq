@@ -58,5 +58,4 @@ class MovieListPresenterImpl: MovieListPresenter {
         return movies[index]
     }
     
-    
 }

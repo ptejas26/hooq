@@ -10,12 +10,7 @@ import UIKit
 
 class MovieDetailsCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet private weak var posterImageView: UIImageView!
-        
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var posterImageView: UIImageView!
     
     func configureCell(with movie: Movie) {
         if let urlString = movie.backdropUrl {
